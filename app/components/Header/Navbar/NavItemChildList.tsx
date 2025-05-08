@@ -22,8 +22,8 @@ const NavItemChildList: React.FC<{ childList: string[]; hovered: boolean }> = ({
     <motion.ul
       variants={ulAnimationVariants}
       animate="hover"
-      className={`absolute flex-col md:flex-row h-6 left-70 md:left-0  hidden md:flex-wrap md:justify-start md:items-center gap-x-1 gap-y-1 md:-bottom-7 ${
-        isSocialmedia ? " md:left-0  " : "md:right-0  right-20"
+      className={`absolute h-6  hidden flex-wrap justify-start items-center gap-x-1 gap-y-1 md:-bottom-7 ${
+        isSocialmedia ? " left-0  " : "right-10  "
       }`}>
       {childList?.map((child, index) => {
         return (

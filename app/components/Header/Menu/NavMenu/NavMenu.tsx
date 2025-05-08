@@ -1,10 +1,8 @@
 "use client";
 
-import { useAppDispatch, useAppSelector } from "@/Store/ReduxHooks";
-import { NavMenuSliceActions } from "@/Store/Slices/NavMenuSlice/NavMenuSlice";
+import { useAppSelector } from "@/Store/ReduxHooks";
 import { AnimatePresence, motion } from "framer-motion";
 import NavMenuItem from "./NavMenuItem";
-import NavItem from "../../Navbar/NavItem";
 import DarkMode from "../../DarkModeButton/DarkModeButton";
 import NavIcons from "../../NavIcons/NavIcons";
 import ExitMenuButton from "./ExitMenuButton";

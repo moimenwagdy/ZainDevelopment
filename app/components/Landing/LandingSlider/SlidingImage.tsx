@@ -6,7 +6,7 @@ const SlidingImage: React.FC<{ images: StaticImageData[]; index: number }> = ({
   index,
 }) => {
   return (
-    <motion.div initial={{ opacity: 0,scale:1.5 }} animate={{ opacity: 1, scale: 1 }}>
+    <motion.div initial={{ opacity: 0,scale:1.3 }} animate={{ opacity: 1, scale: 1 }}>
       <Image
         src={images[index]}
         alt={`Slide ${index + 1}`}
