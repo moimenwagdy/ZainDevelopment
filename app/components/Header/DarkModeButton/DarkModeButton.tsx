@@ -18,7 +18,7 @@ export default function DarkMode() {
   };
 
   return (
-    <div className=" font-sans text-sm z-100 flex gap-x-1 ring rounded dark:ring-blackColor px-1">
+    <div className=" font-sans text-sm z-100 gap-x-1 ring rounded dark:ring-blackColor px-1 flex">
       <ModeButton
         disabled={theme === "dark"}
         moodValue="dark"

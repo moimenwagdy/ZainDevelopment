@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cairo } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import StoreProvider from "@/Store/StoreProvider";
 
 const cairo = Cairo({
   variable: "--cairo--sans",
@@ -19,10 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html dir="rtl" lang="ar">
+    <html lang="ar" dir="rtl" className="dark">
       <body
-        className={` ${cairo.className} antialiased text-4xl dark:bg-blackColor`}>
-        <ThemeProvider attribute="class">{children}</ThemeProvider>
+        className={`${cairo.className} antialiased text-4xl dark:bg-blackColor relative`}>
+        <StoreProvider>
+          <ThemeProvider attribute="class">{children}</ThemeProvider>
+        </StoreProvider>
       </body>
     </html>
   );

@@ -2,8 +2,8 @@ import NavItem from "./NavItem";
 
 const Navbar = () => {
   return (
-    <nav className="relative bg-basicColor h-fit hidden md:block w-7/8 lg:w-[64%] mx-auto rounded-lg my-2 shadow-md">
-      <ul className="w-full container flex flex-wrap text-lg justify-around gap-x-1  items-center h-fit px-5 text-white font-bold mx-auto">
+    <nav className="relative bg-basicColor h-fit hidden md:block  mx-auto rounded-lg my-2 shadow-md w-fit ">
+      <ul className=" container flex flex-wrap text-lg justify-center gap-x-6 px-6 lg:px-18  items-center h-fit  text-white font-bold mx-auto">
         <NavItem title="الرئيسية" />
         <NavItem
           key="خدماتنا"
