@@ -3,8 +3,8 @@
 import { useAppDispatch, useAppSelector } from "@/Store/ReduxHooks";
 import { NavMenuSliceActions } from "@/Store/Slices/NavMenuSlice/NavMenuSlice";
 import { AnimatePresence, motion } from "framer-motion";
-import { useRef } from "react";
 import NavMenuItem from "./NavMenuItem";
+import NavItem from "../../Navbar/NavItem";
 
 const NavMenu = () => {
   const MenuState = useAppSelector((state) => state.NavMenuSlice.navMenuStatus);
@@ -34,6 +34,11 @@ const NavMenu = () => {
             <NavMenuItem title="الصيانة" />
             <NavMenuItem title="إتصل بنا" />
             <NavMenuItem title="تواصل اجتامى" />
+            <NavItem
+          key="خدماتنا"
+          title="خدماتنا"
+          childList={["المقاولات", "التكييف", "الصيانة"]}
+        />
           </ul>
         </motion.main>
       )}
