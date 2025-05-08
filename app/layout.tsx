@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl" className="">
       <body
-        className={`${cairo.className} antialiased text-4xl dark:bg-blackColor relative`}>
+        className={`${cairo.className} antialiased text-4xl dark:bg-blackColor/10 relative overflow-x-hidden`}>
         <StoreProvider>
           <ThemeProvider attribute="class">{children}</ThemeProvider>
         </StoreProvider>

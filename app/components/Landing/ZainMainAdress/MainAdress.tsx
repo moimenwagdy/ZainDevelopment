@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { Capriola } from "next/font/google";
 
-const capriola = Capriola({
+ const capriola = Capriola({
   variable: "--capriola",
   weight: "400",
   subsets: ["latin"],
@@ -40,7 +40,7 @@ const MainAdress = () => {
           initial={{ opacity: 0 }}
           key={i}
           className="text-sm mt-2">
-          <p>{e}</p>
+          <p className="text-shadow-sm">{e}</p>
         </motion.li>
       ))}
     </motion.ul>

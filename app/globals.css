@@ -1,11 +1,13 @@
 @import "tailwindcss";
-
+@plugin 'tailwind-scrollbar';
 @custom-variant dark (&:where(.dark, .dark *));
 
 * {
   box-sizing: border-box;
-  
 }
+
+
+
 @theme {
   --color-basicColor: #8d0300;
   --color-greyColor: #f0f0f0;

@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import zainImg1 from "@/public/zain1.webp";
+import zainImg1 from "@/public/Zain1.webp";
 import zainImg2 from "@/public/zain2.webp";
 import { StaticImageData } from "next/image";
 import SlidingImage from "./SlidingImage";
@@ -18,7 +18,7 @@ const LandingSlider = () => {
   }, [images.length]);
 
   return (
-    <section className="w-11/12 mx-auto rounded-lg mt-3 overflow-hidden">
+    <section className="max-w-[1200px] mx-auto rounded-lg mt-3 overflow-hidden shadow-lg shadow-black/10 max-h-[400px] ">
       <SlidingImage images={images} index={index} key={index} />
     </section>
   );
