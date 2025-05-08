@@ -5,7 +5,7 @@ import React from "react";
 
 const NavIcons = () => {
   return (
-    <div className=" justify-center items-center text-basicColor gap-x-4 flex">
+    <div className=" justify-center items-center text-white md:text-basicColor gap-x-4 flex">
       <FontAwesomeIcon className="w-8 cursor-pointer" icon={faCartShopping} />
       <FontAwesomeIcon className="w-6 cursor-pointer" icon={faUser} />
     </div>
