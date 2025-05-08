@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import CategoriesContainer from "./components/Categories/CategoriesContainer";
 import Header from "./components/Header/Header";
 import LandingSlider from "./components/Landing/LandingSlider/LandingSlider";

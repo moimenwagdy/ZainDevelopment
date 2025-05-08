@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, {  useRef } from "react";
 import ProductCard from "../ProductCard";
 import product from "./getProducts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
