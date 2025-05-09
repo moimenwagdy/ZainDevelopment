@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { memo } from "react";
 
 const ModeButton: React.FC<{
   onClick: () => void;
   moodValue: string;
   disabled: boolean;
-}> = ({ disabled, moodValue, onClick }) => {
+}> = memo(({ disabled, moodValue, onClick }) => {
   return (
     <div id="mood" className={`relative text-white`}>
       <button
@@ -24,6 +24,6 @@ const ModeButton: React.FC<{
       )}
     </div>
   );
-};
+});
 
 export default ModeButton;

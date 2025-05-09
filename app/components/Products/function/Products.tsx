@@ -1,11 +1,11 @@
 "use client";
-import React, {  useRef } from "react";
+import React, { memo, useRef } from "react";
 import ProductCard from "../ProductCard";
 import product from "./getProducts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
-const Products: React.FC<{ products: product[] }> = ({ products }) => {
+const Products: React.FC<{ products: product[] }> = memo(({ products }) => {
   const ulRef = useRef<HTMLUListElement>(null);
   const handleScrollRight = () => {
     ulRef?.current?.scrollBy({ left: 200, behavior: "smooth" });
@@ -40,6 +40,6 @@ const Products: React.FC<{ products: product[] }> = ({ products }) => {
       </div>
     </>
   );
-};
+});
 
 export default Products;

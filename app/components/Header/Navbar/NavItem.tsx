@@ -1,11 +1,11 @@
 "use client";
 import NavItemChildList from "./NavItemChildList";
-import { useState } from "react";
+import { memo, useState } from "react";
 
 const NavItem: React.FC<{
   title: string;
   childList?: string[];
-}> = ({ title, childList }) => {
+}> = memo(({ title, childList }) => {
   const [hovered, setCHildHoverd] = useState<boolean>(false);
 
   return (
@@ -22,6 +22,6 @@ const NavItem: React.FC<{
       )}
     </li>
   );
-};
+});
 
 export default NavItem;

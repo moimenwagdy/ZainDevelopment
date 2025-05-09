@@ -4,13 +4,14 @@ import cardBG from "@/public/cardBG.png";
 import product from "./function/getProducts";
 import { motion } from "framer-motion";
 import { Capriola } from "next/font/google";
+import { memo } from "react";
 
 const capriola = Capriola({
   variable: "--capriola",
   weight: "400",
   subsets: ["latin"],
 });
-const ProductCard: React.FC<{ product: product }> = ({ product }) => {
+const ProductCard: React.FC<{ product: product }> = memo(({ product }) => {
   return (
     <motion.li
       initial={{ scale: 1 }}
@@ -45,6 +46,6 @@ const ProductCard: React.FC<{ product: product }> = ({ product }) => {
       </button>
     </motion.li>
   );
-};
+});
 
 export default ProductCard;
