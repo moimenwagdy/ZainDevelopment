@@ -11,7 +11,7 @@ const SlidingButton: React.FC<{
   return (
     <button
       onClick={onClick}
-      className={` absolute min-w-10 min-h-10 rounded-full ring-4 bg-whiteColor dark:bg-blackColor ring-basicColor top-1/2 -translate-y-1/2 ${
+      className={` absolute min-w-10 min-h-10 rounded-full ring-4  ring-basicColor top-1/2 -translate-y-1/2 ${
         isLeft ? " left-5 md:left-20 " : " right-5 md:right-20 "
       }     animate-pulse hover:animate-none hover:scale-105 shadow-md shadow-blackColor dark:shadow-md dark:shadow-white cursor-pointer`}>
       <FontAwesomeIcon className="text-basicColor w-10 h-10" icon={icon} />
