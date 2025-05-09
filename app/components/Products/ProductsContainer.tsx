@@ -1,5 +1,5 @@
 "use server";
-import Products from "./function/Products";
+import Products from "./Products";
 import product, { getProducts } from "./function/getProducts";
 const ProductsContainer = async () => {
   const products: product[] = await getProducts();

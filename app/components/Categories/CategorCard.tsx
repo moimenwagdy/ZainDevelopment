@@ -13,5 +13,4 @@ const CategorCard: React.FC<{ src: StaticImageData; title: string }> = memo(
     );
   }
 );
-
 export default CategorCard;
