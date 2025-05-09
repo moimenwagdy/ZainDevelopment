@@ -19,7 +19,7 @@ const Products: React.FC<{ products: product[] }> = memo(({ products }) => {
       <ul
         dir="ltr"
         ref={ulRef}
-        className="rounded-2xl w-11/12 flex gap-x-4 overflow-x-scroll scrollbar-none py-2 mx-auto scroll-smooth snap-proximity whitespace-nowrap ">
+        className="rounded-2xl container flex gap-x-4 overflow-x-scroll scrollbar-none py-2 mx-auto scroll-smooth snap-proximity whitespace-nowrap ">
         {products.map((e, i) => {
           return <ProductCard key={i} product={e} />;
         })}
