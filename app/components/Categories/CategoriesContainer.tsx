@@ -39,28 +39,26 @@ const CategoriesContainer = () => {
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
-  
+
     const scrollStep = 1;
     let intervalId: NodeJS.Timeout;
-  
+
     const startScrolling = () => {
       intervalId = setInterval(() => {
         if (!container) return;
-  
+
         container.scrollLeft += scrollStep;
-  
+
         if (container.scrollLeft >= container.scrollWidth / 2) {
-       
           container.scrollLeft = 0;
         }
-      }, 16); 
+      }, 16);
     };
-  
+
     startScrolling();
-  
+
     return () => clearInterval(intervalId);
   }, []);
-  
 
   const duplicatedList = [...products, ...products];
 
@@ -69,7 +67,7 @@ const CategoriesContainer = () => {
       <ul
         dir="ltr"
         ref={containerRef}
-        className="my-10 flex mx-auto gap-x-4 w-[1000px] h-46 overflow-x-scroll scroll-smooth whitespace-nowrap scrollbar-none">
+        className="my-10 flex mx-auto gap-x-4 h-46 overflow-x-hidden scroll-smooth whitespace-nowrap scrollbar-none">
         {duplicatedList.map((e, i) => (
           <CategorCard key={i} title={e.title} src={e.image} />
         ))}
